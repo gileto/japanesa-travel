@@ -416,6 +416,71 @@ z-index: 4;
     margin-bottom: 54px;
 }
 
+.top__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 57px;
+}
+
+.top__card-pic {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.top__card-title, .top__card-comments-value, .top__card-likes-value {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+}
+
+.top__card-title {
+margin:  0 auto 0 0;
+}
+
+.top__card-stats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 16px 25px;
+}
+
+.top__card-likes {
+    padding-right: 20px;
+    background: url(../img/svg/likes.svg) no-repeat right center;
+    margin-right: 14px;
+}
+
+.top__card-comments {
+    padding-right: 23px;
+    background: url(../img/svg/comments.svg) no-repeat right center;
+}
+
+.top__card-descr {
+    margin-bottom: 31px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.top__card-more {
+    padding: 12px 19px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    background:#1B7DFF;
+    text-decoration: none;
+}
+
+.top__card-more:hover, .top__card-more:active, .top__card-more:focus {
+    background: #0e66da;
+}
+
 
 /* top places ends */
 
