@@ -19,12 +19,20 @@ window.onscroll = () => {
     const burgerItem = document.querySelector('.burger');
     const menu = document.querySelector('.header__nav');
     const close = document.querySelector('.header__nav-close');
+    const menuLinks = document.querySelectorAll(".header__link");
     burgerItem.addEventListener('click', () => {
         menu.classList.add('header__nav-active');
     });
     close.addEventListener('click', () => {
         menu.classList.remove("header__nav-active");
-    })
+    });
+    if (window.innerWidth < 768) {
+        for (let i = 0; i < menuLinks.length; i++) {
+            menuLinks[i].addEventListener("click", () => {
+                menu.classList.remove("header__nav-active"); 
+            });
+        }
+    }
 }())
 
 // Scroll to anchors
